@@ -2,111 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <link rel="stylesheet" href="./css//main.css">
-  
 </head>
 <body>
-  <!-- How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
-
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
-
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
 
   <main class="main">
-    <div class="container">
 
-     <div class="image">
-      <img class="desktop-img" src="./images/illustration-woman-online-mobile.svg" alt="desktop">
-     </div>
- 
-
-
-     <div class="content">
-        <h1>faq</h1>
-        <div class="main-div">
-          <div class="content-box">
-            <p>How many team members can I invite?</p>
-            <img onclick="myFunction('Div1')" src="./images/icon-arrow-down.svg" alt="">
-            <!-- <div onclick="myFunction('Div1')" >1</div> -->
-          </div>
-          <div class="toggle-text" id="Div1" style="display: none;">
-            This is my DIV element.
-            </div>
-            </div>
-        
-
-
-
-            <div class="main-div">
-
-            <div class="content-box">
-              <p>  What is the maximum file upload size?</p>
-              <img onclick="myFunction('Div2')" src="./images/icon-arrow-down.svg" alt="">
-              <!-- <div onclick="myFunction('Div2')" >24hello</div> -->
-            </div>
-            <div class="toggle-text" id="Div2" style="display: none;">
-              No more than 2GB. All files in your account must fit your allotted storage space.
-
-              </div>
-              </div>
-
-
-              <div class="main-div">
-
-              <div class="content-box">
-                <p> Can I cancel my subscription</p>
-                <img onclick="myFunction('Div3')" src="./images/icon-arrow-down.svg" alt="">
-                <!-- <div onclick="myFunction('Div3')" >34hello</div> -->
-              </div>
-              <div class="toggle-text" id="Div3" style="display: none;">
-                Yes! Send us a message and we’ll process your request no questions asked.
-                </div>
-                </div>
-
-
-
-                <div class="main-div">
-                  <div class="content-box">
-                    <p>  Do you provide additional support?</p>
-                    <img onclick="myFunction('Div4')" src="./images/icon-arrow-down.svg" alt="">
-                    <!-- <div onclick="myFunction('Div4')">4hello</div> -->
-                  </div>
-                  <div class="toggle-text" id="Div4" style="display: none;">
-                    Chat and email support is available 24/7. Phone lines are open during normal business hours.
-                      
-                    </div>
-                </div>
-        
-      
-      </div>
-     
-
+    <div class="imgdiv">
+      <img src="images/illustration-box-desktop.svg" alt="ilustration box">
+      <img src="images/illustration-woman-online-mobile.svg" alt="illustration woman online">
     </div>
 
+    <aside class="qnadiv">
+      <h1>FAQ</h1>
+
+      <ul>
+
+        <li class="faq">
+          <p>How many team members can I invite?</p>
+          <img src="images/icon-arrow-down.svg" alt="down arrow icon">
+          <span class="hidden">can invite up to 2 additional users on the Free plan. There is no limit on 
+          team members for the Premium plan.</span>
+        </li>
+
+        <li class="faq">
+          <p>What is the maximum file upload size?</p>
+          <img src="images/icon-arrow-down.svg" alt="down arrow icon">
+          <span class="hidden">No more than 2GB. All files in your account must fit your allotted storage space.</span>
+        </li>
+
+        <li class="faq">
+          <p>How do I reset my password?</p>
+          <img src="images/icon-arrow-down.svg" alt="down arrow icon">
+          <span class="hidden">Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.</span>
+        </li>
+
+        <li class="faq">
+          <p>Can I cancel my subscription?</p>
+          <img src="images/icon-arrow-down.svg" alt="down arrow icon">
+          <span class="hidden">Yes! Send us a message and we’ll process your request no questions asked.</span>
+        </li>
+
+        <li class="faq">
+          <p>Do you provide additional support?</p>
+          <img src="images/icon-arrow-down.svg" alt="down arrow icon">
+          <span class="hidden">Chat and email support is available 24/7. Phone lines are open during normal business hours.</span>
+        </li>
+
+      </ul>
+    </aside>
+
   </main>
+
+
+
   <script src="./index.js"></script>
 </body>
 </html>
